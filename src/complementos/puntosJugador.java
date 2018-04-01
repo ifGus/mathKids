@@ -12,21 +12,22 @@ package complementos;
 public class puntosJugador {
 
     private int puntos;
-    private boolean sumarPuntos;
 
     public puntosJugador(int puntosActuales) {
-        this.sumarPuntos = false;
-        puntos = puntosActuales;
-
+        
+        this.puntos = puntosActuales;
+        
     }
 
     public int puntos(boolean sumarPuntos) {
-        this.sumarPuntos = sumarPuntos;
-        if (this.sumarPuntos) {
-            puntos = puntos+10;
+        
+        if (sumarPuntos) {
+            
+            puntos = puntos+100;
+            
         }
 
         return this.puntos;
+        
     }
-
 }
