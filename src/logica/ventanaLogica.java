@@ -54,6 +54,7 @@ public class ventanaLogica extends JFrame implements ActionListener {
         vidas = 3;// Para poder asignar desde una base de datos
         nivel = 1;// Para poder asignar desde una base de datos
         intentos = 0; // Para poder asignar desde una base de datos
+        
         sumaPuntos = new puntosJugador(puntaje);
 
         refrescarDatosNuevos();
@@ -93,9 +94,8 @@ public class ventanaLogica extends JFrame implements ActionListener {
         labelLogica = new JLabel(logico.logicaGenerada());
         labelLogica.setBounds(0, pantalla.PenY(30), pantalla.PenX(100), pantalla.PenY(20));
         labelLogica.setHorizontalAlignment(SwingConstants.CENTER);
-        labelLogica.setFont(new Font("Arial", 1, 70));//labelLogica.setFont(new Font("Confidential Document", 0, 70));//Tipo de letra
+        labelLogica.setFont(new Font("Arial", 1, 70));
         labelLogica.setForeground(Color.cyan);
-        //labelLogica.setBorder(ABORT);
         labelFondo.add(labelLogica);
     
         labelCaritas = new JLabel(";)");
@@ -133,8 +133,7 @@ public class ventanaLogica extends JFrame implements ActionListener {
         botonHome.setBackground(new Color(86, 73, 27));
         botonHome.setCursor(new Cursor(HAND_CURSOR));
         botonHome.addActionListener(this);
-        //transparencia
-        botonHome.setOpaque(false); // VVuelve transparente al boton
+        botonHome.setOpaque(false); // Vuelve transparente al boton
         botonHome.setContentAreaFilled(false);//Quita el fondo al pulsar
         //botonHome.setBorderPainted(false);
         

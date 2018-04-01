@@ -39,7 +39,7 @@ public class nivelYVidas {
             if (puntos >= 2400 && puntos < 3200) {
                 nivel = 4;
             }
-            if (puntos >= 3200 && puntos < 3999) {
+            if (puntos >= 3200 && puntos < 4000) {
                 nivel = 5;
             }
             if(puntos >= 4000){
